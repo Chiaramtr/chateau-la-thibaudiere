@@ -1,0 +1,8 @@
+<div class="container">
+<%= simple_form_for contact_index_path do |f| %>
+  <%= f.input :name, :label => "Name", placeholder: "What is your name?" %>
+  <%= f.input :email %>
+  <%= f.input :message, as: :text, :input_html => {:rows => 5}, placeholder: "Type your message here"%>
+  <%= f.button :submit, "Send", class: "btn-radius btn-green btn-block" %>
+<% end %>
+</div>
