@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'home', to: 'pages#home'
   get 'about', to: 'pages#about', as: :about
   get 'contact', to: 'pages#contact', as: :contact
-  resources :contact, only: [:create]
+  post 'contact', to: 'pages#contact'
 
   # Generic syntax:
   # verb 'path', to: 'controller#action'

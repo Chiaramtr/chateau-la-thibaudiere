@@ -1,8 +1,17 @@
-<div class="container">
-<%= simple_form_for contact_index_path do |f| %>
-  <%= f.input :name, :label => "Name", placeholder: "What is your name?" %>
-  <%= f.input :email %>
-  <%= f.input :message, as: :text, :input_html => {:rows => 5}, placeholder: "Type your message here"%>
-  <%= f.button :submit, "Send", class: "btn-radius btn-green btn-block" %>
-<% end %>
+<div class="bg-contact">
+  <div class="container-contact">
+    <div class="wrap-contact">
+    <h1>NOUS CONTACTER</h1>
+    <div class="contact-form">
+      <div class="input">
+        <%= simple_form_for contact_path do |f| %>
+          <%= f.input_field :first_name, placeholder: 'Prénom', :class => "input" %>
+          <%= f.input_field :last_name, placeholder: 'Nom', :class => "input"%>
+          <%= f.input_field :email, placeholder: 'Email', :class => "input"%>
+          <%= f.input_field :message, as: :text, placeholder: 'Message', :input_html => {:rows => 10}, :class => "message_input"%>
+          <%= f.button :submit, "Envoyer", class: "btn-radius btn-green btn-block" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>

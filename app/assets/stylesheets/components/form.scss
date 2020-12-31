@@ -1,0 +1,69 @@
+.bg-contact {
+  background-image : url(https://res.cloudinary.com/chiaramtr/image/upload/v1609441930/thibaudiere_et_orangerie_bk2gdb.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container-contact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255,255,255,0.8);
+}
+
+.wrap-contact {
+    width: 300px;
+    background: #e4e4e3;
+    background: -webkit-linear-gradient(45deg, #e4e4e3, #e4e4e3);
+    background: -o-linear-gradient(45deg, #e4e4e3, #e4e4e3);
+    background: -moz-linear-gradient(45deg, #e4e4e3, #e4e4e3);
+    background: linear-gradient(45deg, #e4e4e3, #e4e4e3);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 72px 55px 65px 55px;
+    height: 250px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    height: 30px;
+    display: block;
+    width: 100%;
+    background: 0 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 2;
+    padding: 0 5px;
+    border-bottom: 2px solid rgba(255,255,255,.24);
+}
+
+.input-message {
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    display: block;
+    background: 0 0;
+}

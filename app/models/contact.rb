@@ -1,8 +1,9 @@
 class Contact < MailForm::Base
-  attribute :name, validate: true
+  attribute :last_name, validate: true
+  attribute :message
   attribute :email
   validates_format_of :email, with: /\A[^@\s]+@[^@\s]+\z/i
-  attribute :message
+  attribute :first_name
 
   def headers
     {

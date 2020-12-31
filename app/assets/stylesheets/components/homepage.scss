@@ -1,0 +1,56 @@
+.homepage-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  background-image : url(https://res.cloudinary.com/chiaramtr/image/upload/v1609180027/la-thib_xrlwmw.jpg);
+}
+
+.homepage-banner h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 55px;
+}
+
+.text--center {
+    text-align: center!important;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.homepage-menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 56px;
+  margin-bottom: 70px;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0;
+  margin-right: 40px;
+  margin-right: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/*.page-nav {
+    top: 0;
+    padding: 20px 0;
+    padding: 1.25rem 0;
+    text-align: center;
+}*/
