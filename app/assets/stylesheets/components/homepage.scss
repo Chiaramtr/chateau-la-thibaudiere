@@ -12,22 +12,24 @@
   font-size: 55px;
 }
 
+.homepage-menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: -48px;
+  font-size: 22px;
+  font-weight: 900;
+  color: black;
+  text-shadow: black;
+}
+
 .text--center {
     text-align: center!important;
 }
 
-.container {
+.menu-container {
   width: 900px;
   margin: auto;
-}
-
-.homepage-menu {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 56px;
-  margin-bottom: 70px;
-  font-size: 22px;
-  font-weight: 200;
 }
 
 .menu-item {
@@ -47,6 +49,8 @@
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+
+
 
 /*.page-nav {
     top: 0;
