@@ -1,8 +1,8 @@
-<div class="page-nav">
-    <div class="menu-container">
+<div class="main-nav">
+    <div class="navbar-container">
       <ul class="homepage-menu text--center">
-        <li class="menu-item"> LE DOMAINE</li>
-        <li class="menu-item"><%= link_to "L'HISTOIRE", about_path %></li>
+        <li class="menu-item"><%= link_to "L'HISTOIRE", home_path %></li>
+        <li class="menu-item"><%= link_to "LE DOMAINE", about_path %></li>
         <li class="menu-item"><%= link_to "CONTACT", contact_path %></li></li>
         <li class="menu-item"> INFORMATIONS PRATIQUES</li>
       </ul>
@@ -12,50 +12,126 @@
 <div class="about-menu">
   <!-- Side navigation -->
   <div class="about-sidenav">
-    <a href="#">La ferme modèle</a>
-    <a href="#">L'Orangerie</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#ferme">La ferme modèle</a>
+    <a href="#orangerie">L'Orangerie</a>
+    <a href="#parc">Le parc</a>
+    <a href="#jardin">Le Jardin potager</a>
+    <a href="#foret">La Forêt</a>
+    <a href="#ile">L’Île dans son étang</a>
   </div>
 
 <!-- Page content -->
   <div class="main">
-    <div class="container-text">
+    <div class="container-text" id='ferme'>
       <h1>La ferme modèle</h1>
         <p> Inspirée du phalanstère de Fourier, la Ferme modèle a été conçue comme une cité harmonieuse avec différents espaces alloués à différentes activités, où l’Homme peut s’épanouir dans le travail.
           Historiquement la ferme se composait entre autres de locaux d'habitation, d’une écurie, d’un garage, d’une étable, d’une laiterie, d’un chenil, d’une boulangerie, d’une blanchisserie.
           Articulée autour d’une Cour des communs, elle reproduit un style anglo-normand du XIXème siècle
           C’est un espace de X m² composé de X sous-espaces : Liste des sous-espaces
           Si deux bâtiments de la ferme ont été restaurés à date, le reste est en très mauvais état et sa restauration à l'état d'origine est un projet ambitieux</p>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <%= link_to image_tag("ferme1.jpg", alt: "placeholder image 1",
+                      class: "img-responsive") %>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <%= link_to image_tag("ferme2.jpg", alt: "placeholder image 2",
+                      class: "img-responsive") %>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <%= link_to image_tag("ferme3.jpg", alt: "placeholder image 3",
+                      class: "img-responsive") %>
+      </div>
     </div>
-    <div class="container-text">
+        <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <div class="pull-left"><h4>Your picture gallery</h4></div>
+                  <button type="button" class="close" data-dismiss="modal" title="Close">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+              </div>
+        <div class="modal-body">
+          <div id="myGallery" class="carousel slide" data-interval="false">
+                <div class="carousel-inner">
+
+                <div class="item active">
+                   <%= image_tag("ferme1.jpg",
+                                      alt: "Description of your image here",
+                                      class: "img-responsive") %>
+                     <div class="carousel-caption">
+                       <h3>Your caption here</h3>
+                         <p>Description here</p>
+                     </div>
+                </div>
+                <div class="item">
+                   <%= image_tag("ferme2.jpg",
+                                      alt: "Description of your image here",
+                                      class: "img-responsive") %>
+                     <div class="carousel-caption">
+                       <h3>Your caption here</h3>
+                         <p>Description here</p>
+                     </div>
+                </div>
+                <div class="item">
+                   <%= image_tag("ferme3.jpg",
+                                      alt: "Description of your image here",
+                                      class: "img-responsive") %>
+                     <div class="carousel-caption">
+                       <h3>Your caption here</h3>
+                         <p>Description here</p>
+                     </div>
+                </div>
+
+                          </div><!--end carousel-inner-->
+
+              <!--Begin Previous and Next buttons-->
+                <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
+                  href="#myGallery" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div><!--end carousel-->
+        </div><!--end modal-body-->
+            <div class="modal-footer">
+            <div class="pull-left">
+            </div>
+              <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
+          </div><!--end modal-footer-->
+        </div><!--end modal-content-->
+      </div><!--end modal-dialoge-->
+    </div><!--end myModal-->
+
+    <div class="container-text" id="orangerie">
       <h1>L’orangerie</h1>
       <p> L’orangerie est un bâtiment de style classique qui a été récemment rénové et est en parfait état.
         Historiquement, le lieu était …
         Le lieu est aujourd’hui utilisé pour ….
         C’est un espace de X m² composé de X sous-espaces : Liste des sous-espaces</p>
     </div>
-    <div class="container-text">
+    <div class="container-text" id="parc">
       <h1>Le parc</h1>
       <p>C’est un espace de X m² composé de X sous-espaces : Liste des sous-espaces
       Un parc Choulot . Le parc a été réalisé par le comte de Choulot, qui prône un nouveau concept pour les parcs agricoles et paysagers. Son approche se veut "minimaliste".
       Un des grands principes de Choulot dans la conception de ses parcs, est de créer des liaisons visuelles entre l’intérieur des propriétés et le paysage environnant :  "Ce qui importe dans la composition, c’est la grandeur ; à défaut de la réalité, il faut au moins en faire naître l’idée, (…) en multipliant les plans avec une réserve intelligente (…). L’art doit battre en brèche ces remparts impénétrables à l’œil (murailles de verdure) et y faire de larges ouvertures qui permettent au pays d’y pénétrer et de mêler les scènes de la nature aux tableaux créés par l’artiste". Comte de Choulot, L'Art des Jardins, Première et deuxième livraison, Chapitre 2 à Paris, 1863
       </p>
     </div>
-    <div class="container-text">
+    <div class="container-text" id="jardin">
       <h1>Le Jardin potager</h1>
       <p> Un jardin potager de 2ha
         Potager du 18ème
       Grand bassin rond central
     Il était divisé quatre zones autour de ce bassin : légumes / arbres fruitiers / simples / fleurs / plantes aromatiques</p>
     </div>
-    <div class="container-text">
+    <div class="container-text" id="foret">
       <h1>La Forêt</h1>
       Une forêt de 30 ha
       25 ha de pelouse
       Charme pin larycio
     </div>
-    <div class="container-text">
+    <div class="container-text" id="ile">
       <h1>L’Île dans son étang</h1>
         <p>Une île de 3 ha
           On accède à l’île par une allée sombre où l’on remarquera des chênes et des pins exceptionnels.

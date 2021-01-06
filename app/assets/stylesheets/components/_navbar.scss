@@ -1,12 +1,23 @@
-.navbar-lewagon {
+.main-nav {
   justify-content: space-between;
   background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  padding: 10px 0px 80px 0px;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-container {
+  width: 900px;
+  margin: auto;
+}
+
+
+/*.page-nav {
+    top: 0;
+    padding: 20px 0;
+    padding: 1.25rem 0;
+    text-align: center;
+}*/
