@@ -33,6 +33,8 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'mail_form'
 gem 'bootstrap-sass'
+gem 'cloudinary', '~> 1.16.0'
+
 
 group :development, :test do
   gem 'pry-byebug'
