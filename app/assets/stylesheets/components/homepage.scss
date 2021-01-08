@@ -17,10 +17,19 @@
   padding: 0;
   margin-top: 22px;
   margin-bottom: -48px;
+}
+
+.homepage-menu li {
   font-size: 22px;
   font-weight: 900;
   color: black;
   text-shadow: black;
+  text-decoration: none;
+}
+
+.homepage-menu li:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .text--center {

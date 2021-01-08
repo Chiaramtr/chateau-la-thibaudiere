@@ -29,80 +29,37 @@
           Articulée autour d’une Cour des communs, elle reproduit un style anglo-normand du XIXème siècle
           C’est un espace de X m² composé de X sous-espaces : Liste des sous-espaces
           Si deux bâtiments de la ferme ont été restaurés à date, le reste est en très mauvais état et sa restauration à l'état d'origine est un projet ambitieux</p>
-
-    <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <%= link_to image_tag("ferme1.jpg", alt: "placeholder image 1",
-                      class: "img-responsive") %>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <%= link_to image_tag("ferme2.jpg", alt: "placeholder image 2",
-                      class: "img-responsive") %>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <%= link_to image_tag("ferme3.jpg", alt: "placeholder image 3",
-                      class: "img-responsive") %>
-      </div>
     </div>
-        <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                <div class="pull-left"><h4>Your picture gallery</h4></div>
-                  <button type="button" class="close" data-dismiss="modal" title="Close">
-                    <span class="glyphicon glyphicon-remove"></span>
-                  </button>
-              </div>
-        <div class="modal-body">
-          <div id="myGallery" class="carousel slide" data-interval="false">
-                <div class="carousel-inner">
-
-                <div class="item active">
-                   <%= image_tag("ferme1.jpg",
-                                      alt: "Description of your image here",
-                                      class: "img-responsive") %>
-                     <div class="carousel-caption">
-                       <h3>Your caption here</h3>
-                         <p>Description here</p>
-                     </div>
-                </div>
-                <div class="item">
-                   <%= image_tag("ferme2.jpg",
-                                      alt: "Description of your image here",
-                                      class: "img-responsive") %>
-                     <div class="carousel-caption">
-                       <h3>Your caption here</h3>
-                         <p>Description here</p>
-                     </div>
-                </div>
-                <div class="item">
-                   <%= image_tag("ferme3.jpg",
-                                      alt: "Description of your image here",
-                                      class: "img-responsive") %>
-                     <div class="carousel-caption">
-                       <h3>Your caption here</h3>
-                         <p>Description here</p>
-                     </div>
-                </div>
-
-                          </div><!--end carousel-inner-->
-
-              <!--Begin Previous and Next buttons-->
-                <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
-                  href="#myGallery" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-              </div><!--end carousel-->
-        </div><!--end modal-body-->
-            <div class="modal-footer">
-            <div class="pull-left">
-            </div>
-              <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
-          </div><!--end modal-footer-->
-        </div><!--end modal-content-->
-      </div><!--end modal-dialoge-->
-    </div><!--end myModal-->
+    <div class="flexbox">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag "ferme1.jpeg"%>
+          </div>
+          <div class="item">
+            <%= image_tag "ferme2.jpeg"%>
+          </div>
+          <div class="item">
+            <%= image_tag "ferme3.jpeg" %>
+          </div>
+        </div>
+      </div>
+        <!-- Carousel nav -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
     <div class="container-text" id="orangerie">
       <h1>L’orangerie</h1>

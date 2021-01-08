@@ -16,13 +16,18 @@
   padding: 4px 0px 38px 15px;
   text-decoration: none;
   font-size: 22px;
-  color: #818181;
+  color: #252525;
   display: block;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container-text {
+  font-family: 'Raleway', sans-serif;
 }
 
 /* When you mouse over the navigation links, change their color */
 .about-sidenav a:hover {
-  color: #f1f1f1;
+  font-weight: bold;
 }
 
 /* Style page content */
