@@ -33,10 +33,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'mail_form'
 gem 'cloudinary', '~> 1.16.0'
-gem 'bootstrap', '~> 4.3.1'
-gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
-gem 'jquery-rails'
 
 
 group :development, :test do
