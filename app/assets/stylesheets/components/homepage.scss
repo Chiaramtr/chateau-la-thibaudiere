@@ -49,6 +49,15 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.menu-item a {
+  color: black;
+}
+
+.menu-item a:hover {
+  color: black;
+  font-weight: 900;
+}
+
 .ul {
     display: block;
     list-style-type: disc;
