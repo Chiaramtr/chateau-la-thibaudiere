@@ -34,6 +34,7 @@ gem 'simple_form'
 gem 'mail_form'
 gem 'cloudinary', '~> 1.16.0'
 gem 'sassc-rails', '>= 2.1.0'
+gem 'geocoder'
 
 
 group :development, :test do

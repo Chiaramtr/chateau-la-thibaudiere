@@ -1,5 +1,6 @@
 # config/routes.rb
 Rails.application.routes.draw do
+  resources :places
   root to: 'pages#home'
   get 'home', to: 'pages#home'
   get 'about', to: 'pages#about', as: :about
