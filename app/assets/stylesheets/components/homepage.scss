@@ -1,15 +1,27 @@
-.homepage-banner {
+.bg-homepage {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  background-position: center;
-  padding: 200px 0;
-  background-image : url(https://res.cloudinary.com/chiaramtr/image/upload/v1609180027/la-thib_xrlwmw.jpg);
+  background-image : url(https://res.cloudinary.com/chiaramtr/image/upload/v1610385236/La%20thibaudiere/D0BFE4A9-97BD-4DD0-AEBC-32734DFEA718_1_105_c_hgwonq.jpg);
 }
 
-.homepage-banner h1 {
-  color: white;
+.bg-homepage h1 {
+  color: #281919;
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  font-size: 55px;
+  font-weight: 500;
+  font-size: 62px;
+}
+
+.container-homepage{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
 }
 
 .homepage-menu {
@@ -34,6 +46,7 @@
 
 .text--center {
     text-align: center!important;
+    text-shadow: 0 0 black;
 }
 
 .menu-container {
