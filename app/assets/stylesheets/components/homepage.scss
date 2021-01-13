@@ -1,27 +1,25 @@
+// @media screen and ((min-width: 2000px)) {
+//   .bg-homepage {max-width: 2000px;}
+// }
+
 .bg-homepage {
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-image : url(https://res.cloudinary.com/chiaramtr/image/upload/v1610385236/La%20thibaudiere/D0BFE4A9-97BD-4DD0-AEBC-32734DFEA718_1_105_c_hgwonq.jpg);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
 }
 
 .bg-homepage h1 {
   color: #281919;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 62px;
-}
-
-.container-homepage{
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  background: transparent;
+  font-size: 50px;
 }
 
 .homepage-menu {
