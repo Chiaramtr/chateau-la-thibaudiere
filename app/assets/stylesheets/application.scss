@@ -2,6 +2,7 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
+@import "config/bootstrap_overrides.scss";
 
 // External libraries
 @import "font-awesome-sprockets";
@@ -25,8 +26,7 @@
 @import url(components/homepage.css);
 @import url(components/text.css);
 @import url(components/contact.css);
-@import url(components/form.css);
-@import url(components/menu.css);
+@import url(components/about.css);
 @import url(components/navbar.css);
 @import url(components/photo.css);
 @import url(components/map.css);

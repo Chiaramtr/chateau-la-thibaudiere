@@ -1,6 +1,5 @@
 <div class="container bg-contact">
-  <div class="row">
-    <div class="col-12 text--center">
+    <div class="menu-container">
       <ul class="homepage-menu text--center">
         <li class="menu-item"><%= link_to "L'HISTOIRE", home_path %></li>
         <li class="menu-item"><%= link_to "LE DOMAINE", about_path %></li>
@@ -8,11 +7,9 @@
         <li class="menu-item"><%= link_to "INFORMATIONS PRATIQUES", infos_path %></li>
       </ul>
     </div>
-  </div>
-  <div class="col-12">
     <div class="container-contact">
-      <div class="wrap-contact text--center">
-        <h1>NOUS CONTACTER</h1>
+      <div class="wrap-contact">
+      <h1>NOUS CONTACTER</h1>
       <div class="contact-form">
         <div class="input">
           <%= simple_form_for contact_path do |f| %>

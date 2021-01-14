@@ -1,9 +1,13 @@
 .bg-contact {
-  background-image : url(https://res.cloudinary.com/chiaramtr/image/upload/v1609441930/thibaudiere_et_orangerie_bk2gdb.jpg);
+  background-image : url(https://res.cloudinary.com/chiaramtr/image/upload/v1610322287/La%20thibaudiere/Le_parc_en_hiver_ses_perspectives_mhninj.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
 }
 
 .container-contact {
