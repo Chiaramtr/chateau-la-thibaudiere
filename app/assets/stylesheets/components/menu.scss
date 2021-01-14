@@ -5,12 +5,13 @@ background-color: transparent;
 
 .about-sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 100px; /* Set the width of the sidebar */
+  width: min-content; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   background-color: transparent; /* Black */
   padding-top: 30px;
-  overflow-x: auto;
+  margin-right: 10px;
+  overflow-x: hidden;
 }
 
 /* The navigation menu links */
@@ -44,6 +45,7 @@ background-color: transparent;
 /* Style page content */
 .main {
   padding: 0px 10px;
+  margin-left: 30px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
