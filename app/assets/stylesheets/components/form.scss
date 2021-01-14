@@ -14,7 +14,6 @@
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(255,255,255,0.8);
 }
 
 .wrap-contact {
@@ -26,8 +25,9 @@
     background: linear-gradient(45deg, #e4e4e3, #e4e4e3);
     border-radius: 10px;
     overflow: hidden;
-    padding: 52px 90px 80px 99px;
+    padding: 15px 10px 15px 15px;
     height: 430px;
+    background: rgba(255,255,255,0.8);
 }
 
 .contact-form {
@@ -45,7 +45,7 @@
     padding: 0 5px;
     outline: none;
     border: none;
-    height: 30px;
+    height: 40px;
     display: block;
     width: 100%;
     background: 0 0;

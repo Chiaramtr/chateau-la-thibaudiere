@@ -5,7 +5,7 @@ background-color: transparent;
 
 .about-sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: min-content; /* Set the width of the sidebar */
+  width: auto; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   background-color: transparent; /* Black */
@@ -16,9 +16,9 @@ background-color: transparent;
 
 /* The navigation menu links */
 .about-sidenav a {
-  padding: 8px 0px 35px 15px;
+  padding: 9px 10px 35px 5px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 13px;
   color: #252525;
   display: block;
   font-family: 'Raleway', sans-serif;
