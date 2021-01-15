@@ -21,12 +21,10 @@
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
-    <div id='map' style='width: 400px; height: 300px;'></div>
     <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2hpYXJhbXRyIiwiYSI6ImNrZ3l6YzZlYTBxenYzMG9zcThtYTZ3amkifQ.7JNs5rpi6uCKbEmX40EqQg';
     var map = new mapboxgl.Map({
-    container: 'container-map',
+    container: 'map',
     style: 'mapbox://styles/chiaramtr/ckjyi4u2i2qch17qzgl0529w3', // stylesheet location
     center: [-0.6373141584905248, 47.54282299664977], // starting position [lng, lat]
     zoom: 9 // starting zoom
