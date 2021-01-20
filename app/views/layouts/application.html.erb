@@ -12,8 +12,16 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%#= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>
 
+    <meta charset="utf-8" />
+    <title>Add a default marker</title>
+    <title>Display map navigation controls</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body { margin: 0; padding: 0; }
+      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
   </head>
 
   <body>
@@ -27,8 +35,15 @@
     container: 'map',
     style: 'mapbox://styles/chiaramtr/ckjyi4u2i2qch17qzgl0529w3', // stylesheet location
     center: [-0.6373141584905248, 47.54282299664977], // starting position [lng, lat]
-    zoom: 9 // starting zoom
+    zoom: 12 // starting zoom
     });
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+    var marker = new mapboxgl.Marker()
+    .setLngLat([-0.6373141584905248, 47.54282299664977])
+    .addTo(map);
     </script>
   </body>
 </html>

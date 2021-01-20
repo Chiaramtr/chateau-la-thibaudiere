@@ -8,15 +8,15 @@
       </ul>
     </div>
     <div class="container-contact">
-      <div class="wrap-contact">
+      <div class="wrap-contact text--center">
       <h1>NOUS CONTACTER</h1>
-      <div class="contact-form">
+      <div class="contact-form text--center">
         <div class="input">
           <%= simple_form_for contact_path do |f| %>
             <%= f.input_field :first_name, placeholder: 'Prénom', :class => "input" %>
             <%= f.input_field :last_name, placeholder: 'Nom', :class => "input"%>
             <%= f.input_field :email, placeholder: 'Email', :class => "input"%>
-            <%= f.input_field :message, as: :text, placeholder: 'Message', :input_html => {:rows => 10}, :class => "message_input"%>
+            <%= f.input_field :message, as: :text, placeholder: 'Message', :input_html => {:rows => 20}, :class => "message_input"%>
             <%= f.button :submit, "Envoyer", class: "btn-radius btn-green btn-block" %>
             <% end %>
         </div>
