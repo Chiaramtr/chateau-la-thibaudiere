@@ -2,19 +2,29 @@
   <div class="row">
     <div class="col-12 text--center">
       <ul class="homepage-menu text--center">
-        <li class="menu-item"><%= link_to "L'HISTOIRE", home_path %></li>
+        <li class="menu-item"><%= link_to "ACCEUIL", home_path %></li>
         <li class="menu-item"><%= link_to "LE DOMAINE", about_path %></li>
         <li class="menu-item"><%= link_to "CONTACT", contact_path %></li></li>
         <li class="menu-item"><%= link_to "INFORMATIONS PRATIQUES", infos_path %></li>
       </ul>
     </div>
   </div>
-  <div class="row info-content">
-    <div class="col-6">
-      <div id='map' style='width: 600px; height: 500px;'></div>
+  <div class="row">
+    <div class="col-12 text--center map-info">
+      <h4> Accès et périodes de visite</h4>
     </div>
-    <div class="col-6">
-      <p>Comment accéder à la Thibaudière</p>
+  </div>
+  <div class="row info-content">
+    <div class="col-5">
+      <div id='map' style='height: 400px;'></div>
+    </div>
+    <div class="col-2">
+
+    </div>
+    <div class="col-3">
+      <div class="info-photo">
+        <%= image_tag("la-thib-contact.jpg", height: 400, :style => 'border: 1px solid #000;')%>
+      </div>
     </div>
   </div>
 </div>

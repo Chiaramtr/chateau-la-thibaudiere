@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-12 text--center">
       <ul class="homepage-menu text--center">
-        <li class="menu-item"><%= link_to "L'HISTOIRE", home_path %></li>
+        <li class="menu-item"><%= link_to "ACCEUIL", home_path %></li>
         <li class="menu-item"><%= link_to "LE DOMAINE", about_path %></li>
         <li class="menu-item"><%= link_to "CONTACT", contact_path %></li></li>
         <li class="menu-item"><%= link_to "INFORMATIONS PRATIQUES", infos_path %></li>
@@ -16,9 +16,10 @@
   <div class="col-3">
     <!-- Side navigation -->
     <div class="about-sidenav">
+      <a href="#communs">Les communs</a>
+      <a href="#parc">Le parc</a>
       <a href="#ferme">La ferme modèle</a>
       <a href="#orangerie">L'Orangerie</a>
-      <a href="#parc">Le parc</a>
       <a href="#jardin">Le Jardin potager</a>
       <a href="#foret">La Forêt</a>
       <a href="#ile">L’Île dans son étang</a>
@@ -27,6 +28,72 @@
   <div class="col-9">
   <!-- Page content -->
     <div class="main">
+<!--       <div class="container-text" id='chateau'>
+        <h1>Le château</h1>
+      </div> -->
+      <div class="container-text" id='communs'>
+        <h1>Les communs</h1>
+          <p>Les Communs du Château de la Thibaudière  (1ha) sont inscrits ISMH par arrêté du 5 juillet 2005 du Ministère de la Culture. On y accède par deux grands portails Monumentaux.  Les Communs s'organisent autour d'une volière de briques, tuffeau et ardoises placée au centre d’une grande cour intérieure.</p>
+          <p>Inspirés des communs de Scarisbrick Hill (Leicester) dans un style anglo-normand très soigné (colombages peints en façades). Deux grands porches à portes de bois à claire-voie, axés, donnent accès à la cour intérieure, celle-ci comporte deux pôles fonctionnels. Au Sud de la cour, dans le bâtiment dit de l’horloge (en restauration), la "cavalerie" (cinq boxes-stalles à chevaux, la sellerie, la remise à attelages et, à l'étage, les chambres des domestiques et palefreniers. </p>
+          <p> Faisant face à cet élégant bâtiment, la ferme-modèle avec ses nombreuses fonctions (le vin, la laiterie, le bois, le cheval de trait et les attelages, les porcs, les bovins, la boulangerie, la blanchisserie et deux grands greniers à foin). 
+          La propriété comptait 1,800 hectares et employait plus de trois cent personnes disséminées dans les nombreuses fermes du domaine (Les Mazuaux, Clos-Prune, les deux Mesnils, Virloin, etc. …).
+          Autour de cette cour carrée, les façades sont traitées avec un soin tout particulier: jeu de la brique et de la pierre blanche, de la symétrie, les décors de boiseries ajourées, appuis de balcons, encorbellements.  Les plans et comptes de travaux d'origine ont disparus (sauf quelques dessins d'élévations) mais les comparaisons avec d'autres fonds, en particulier celui du château du Rouvotz par S. Delletre renvoient sans doute à la campagne de travaux qu'a effectuée sur la Thibaudiére le même Delletre (1802-64) au milieu du siècle.
+          Le plan du parc réalisé alors ne montre pas les communs que l'on voit actuellement mais il ne fait guère de doute que leur construction a dû se faire peu après.</p>
+      </div>
+      <div class="container-text" id="parc">
+        <h1>Le parc</h1>
+        <!-- <p>C’est un espace de X m² composé de X sous-espaces : Liste des sous-espaces -->
+        <!-- Un parc Choulot . Le parc a été réalisé par le comte de Choulot, qui prône un nouveau concept pour les parcs agricoles et paysagers. Son approche se veut "minimaliste". -->
+        <!-- Un des grands principes de Choulot dans la conception de ses parcs, est de créer des liaisons visuelles entre l’intérieur des propriétés et le paysage environnant :  "Ce qui importe dans la composition, c’est la grandeur ; à défaut de la réalité, il faut au moins en faire naître l’idée, (…) en multipliant les plans avec une réserve intelligente (…). L’art doit battre en brèche ces remparts impénétrables à l’œil (murailles de verdure) et y faire de larges ouvertures qui permettent au pays d’y pénétrer et de mêler les scènes de la nature aux tableaux créés par l’artiste". Comte de Choulot, L'Art des Jardins, Première et deuxième livraison, Chapitre 2 à Paris, 1863 -->
+        <!-- </p> -->
+          <p> Le Parc du Château de la Thibaudière est classé au Titre des Sites (Ministère de l'Environnement) par deux arrêtés:
+          1.  Arrêté de classement du 2 mai 1975 (Secrétariat d'État à la Culture),
+          2.  Arrêté Complémentaire de Classement du 24 février 1987 (Ministère de l'Équipement, du Logement, de l'Aménagement du Territoire et des Transports). </p>
+          <p> C’est un parc « Choulot ».  Au XIXe siècle, Paul-Bernard de Lavenne, comte de Choulot, 1794 (Nevers) - 1864 (Pougues-les-Eaux), prône un nouveau concept pour les parcs agricoles et paysagers:  Un des grands principes de Choulot dans la conception de ses parcs, est de créer des liaisons visuelles entre l’intérieur des propriétés et le paysage environnant : "Ce qui importe dans la composition, c’est la grandeur : à défaut de la réalité, il faut au moins en faire naître l’idée (…) L’art doit battre en brèche ces remparts impénétrables à l’œil (murailles de verdure) et y faire de larges ouvertures qui permettent au pays d’y pénétrer et de mêler les scènes de la nature aux tableaux créés par l’artiste.</p>
+      </div>
+
+      <div class="flexbox">
+        <div id="myCarousel" class="carousel slide border" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/c_scale,h_2000/v1610322287/La%20thibaudiere/Le_parc_en_hiver_ses_perspectives_mhninj.jpg" alt>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/c_scale,h_2000/v1610322281/La%20thibaudiere/L_e_tang_Ouest_et_ses_canard_au_fond_le_pin_Laricio_de_Corse_n8jv4l.jpg" alt>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/v1610322284/La%20thibaudiere/Plan_de_Choulot_fag3lt.jpg" alt>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/v1610323071/La%20thibaudiere/040817-Notre-Dame_du_Parc_slnqce.jpg" alt>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/c_scale,h_2000/v1610323068/La%20thibaudiere/Notre-Dame_du_Parc_hln7wh.jpg" alt>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+        </a>
+        </div>
+          <p> Les interventions du comte de Choulot démontrent une conservation et une intégration des anciens aménagements paysagers pour améliorer l’existant. Pour cela, il tient compte de la topographie, des arbres existants, des lointains et de l’orientation du soleil pour la direction donnée aux allées et le choix des couleurs des feuillages. Il insiste également sur l’aménagement d’une partie (le jardin) en rapport avec le tout (la propriété et son environnement) et mise sur la fusion de l’utile à l’agréable. S’il propose une création paysagère unique et adaptée à chaque site, certains aménagements sont récurrents comme l’emploi des allées cavalières, les promenades de forme concentrique autour de la demeure, les pièces d’eau, les bosquets contenant des folies, les coulées, les bosquets en forme de Y, etc. …<p>
+          <p> Le paysagiste avait pour habitude de créer deux plans, l'un destiné au propriétaire et commanditaire aquarellé en couleurs par sa femme, Élisabeth de Chabannes La Palisse, et l’autre en noir et blanc pour son usage personnel. Ces plans, non signés, sont toutefois aisément reconnaissables par leur singularité et leur uniformité : une vue aérienne du domaine est encadrée par des vignettes représentant les fabriques disposées dans le parc, un cartouche en lettres gothiques de couleurs (noir, rouge et bleu) indique le lieu, le nom du commanditaire et parfois l'année.<p>  Pendant plus de vingt ans, le comte de Choulot intervient sur 264 parcs. La dernière version de son traité intègre une liste de plans et parcs exécutés selon sa méthode (dont le parc du Château de la Thibaudière). Son œuvre contient de nombreux parcs privés et cinq parcs urbains, dont la vaste opération de la ville-parc du Vésinet.<p>
+          La mode des parcs agricoles et paysagers a eu son apogée entre 1840 et 1860.
+          "Son approche se veut "minimaliste".<p>
+          <p> Entre 1840 et 1860, ce sont près de trente cinq parcs qui furent réalisés dans la région par le Comte de Choulot, attribués ou dont il aurait fortement inspiré la réalisation.<p>
+      </div>
       <div class="container-text" id='ferme'>
         <h1>La ferme modèle</h1>
           <p> Inspirée du phalanstère de Fourier, la Ferme modèle a été conçue comme une cité harmonieuse avec différents espaces alloués à différentes activités, où l’Homme peut s’épanouir dans le travail.
@@ -105,51 +172,6 @@
         </div>
       </div>
 
-      <div class="container-text" id="parc">
-        <h1>Le parc</h1>
-        <p>C’est un espace de X m² composé de X sous-espaces : Liste des sous-espaces
-        Un parc Choulot . Le parc a été réalisé par le comte de Choulot, qui prône un nouveau concept pour les parcs agricoles et paysagers. Son approche se veut "minimaliste".
-        Un des grands principes de Choulot dans la conception de ses parcs, est de créer des liaisons visuelles entre l’intérieur des propriétés et le paysage environnant :  "Ce qui importe dans la composition, c’est la grandeur ; à défaut de la réalité, il faut au moins en faire naître l’idée, (…) en multipliant les plans avec une réserve intelligente (…). L’art doit battre en brèche ces remparts impénétrables à l’œil (murailles de verdure) et y faire de larges ouvertures qui permettent au pays d’y pénétrer et de mêler les scènes de la nature aux tableaux créés par l’artiste". Comte de Choulot, L'Art des Jardins, Première et deuxième livraison, Chapitre 2 à Paris, 1863
-        </p>
-      </div>
-
-      <div class="flexbox">
-        <div id="myCarousel" class="carousel slide border" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/c_scale,h_2000/v1610322287/La%20thibaudiere/Le_parc_en_hiver_ses_perspectives_mhninj.jpg" alt>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/c_scale,h_2000/v1610322281/La%20thibaudiere/L_e_tang_Ouest_et_ses_canard_au_fond_le_pin_Laricio_de_Corse_n8jv4l.jpg" alt>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/v1610322284/La%20thibaudiere/Plan_de_Choulot_fag3lt.jpg" alt>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/v1610323071/La%20thibaudiere/040817-Notre-Dame_du_Parc_slnqce.jpg" alt>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" id='parc' src="https://res.cloudinary.com/chiaramtr/image/upload/c_scale,h_2000/v1610323068/La%20thibaudiere/Notre-Dame_du_Parc_hln7wh.jpg" alt>
-            </div>
-          </div>
-          <!-- Carousel nav -->
-           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="sr-only">Previous</span>
-           </a>
-           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="sr-only">Next</span>
-           </a>
-        </a>
-        </div>
-      </div>
 
       <div class="container-text" id="jardin">
         <h1>Le Jardin potager</h1>
